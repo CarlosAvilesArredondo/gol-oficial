@@ -26,7 +26,7 @@ public class EMail {
         props.put("mail.smtp.host",host);
         props.put("mail.smtp.user",from);
         props.put("mail.smtp.password",password);
-        props.put("mail.smtp.port",25);
+        props.put("mail.smtp.port",587);
         props.put("mail.smtp.auth","true");
         Session session = Session.getDefaultInstance(props,null);
         MimeMessage mimeMessage = new MimeMessage(session);
